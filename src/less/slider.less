@@ -1,0 +1,96 @@
+.slider {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	/* Ajuste conforme necessário */
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+	/* Ajuste conforme necessário */
+  }
+
+  .slider-nav {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 10px;
+  }
+
+  .slide {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+  }
+
+  .slide-item {
+	flex: 1;
+	text-align: left;
+	display: none;
+  }
+
+  .slide__item--active {
+	display: flex;
+  }
+  .slide-item img {
+	max-width: 100%;
+	height: auto;
+  }
+
+  .slide-text {
+	flex: 1;
+	text-align: left;
+  }
+
+  .slider--btn {
+	background: rgba(0, 0, 0, 0);
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+  }
+
+  .slider--btn__prev {
+	border-radius: 5px 0 0 5px;
+  }
+
+  .slider--btn__next {
+	border-radius: 0 5px 5px 0;
+  }
+
+  .video-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+	filter: blur(7px); /* Add blur effect */
+  }
+  .characterDescription {
+	font-size: 18px;
+	color: #f9f9f9;
+  }
+  /* Define the animation for slide transition */
+  @keyframes slideOut {
+	from { opacity: 1; transform: translateX(0); }
+	to { opacity: 0; transform: translateX(-100%); }
+  }
+
+  @keyframes slideIn {
+	from { opacity: 0; transform: translateX(100%); }
+	to { opacity: 1; transform: translateX(0); }
+  }
+
+  .slide__item--out {
+	animation: slideOut 0.5s forwards;
+  }
+
+  .slide__item--in {
+	animation: slideIn 0.5s forwards;
+  }
