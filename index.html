@@ -22,6 +22,44 @@
       font-size: 18px;
       color: #f9f9f9
     }
+
+    .center-text {
+      text-align: center;
+    }
+
+    .text {
+      color: #f9f9f9;
+      font-size: 18px;
+    }
+
+    .music {
+      width: 100%;
+      margin-top: 0px;
+      padding: 20px;
+    }
+
+    .spotify-frame {
+      width: 100%;
+      height: 60vh;
+      padding: 10px;
+    }
+    .app-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .app-list ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+    }
+
+    .app-list ul li {
+      margin: 0 10px;
+    }
   </style>
 </head>
 
@@ -74,9 +112,9 @@
       </section>
     </main>
   </div>
-  <div class="head">
+  <div class="head center-text">
     <h2 class="hero glitch layers" data-text="Characters" style="font-size: 50px;">
-      <span>
+      <span class="">
         Characters
       </span>
     </h2>
@@ -109,7 +147,7 @@
             <img src="./src/images/Caitlyn.webp" alt="Caitlyn Kiramman" class="character--image">
           </div>
         </div>
-        
+
         <div class="slide-item content-split" data-region="Zaum">
           <div class="content-right">
             <h3 class="hero glitch layers" data-text="Jinx" style="font-size: 30px;">
@@ -283,11 +321,57 @@
         </svg>
       </button>
   </section>
-  <section>
-    <h2>Contact Us</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua.</p>
-  </section>
+  <div class="container">
+    <section class="music">
+      <!-- Spotify OST -->
+      <div class="content-split">
+        <div class="content-left">
+          <iframe class="spotify-frame" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            src="https://open.spotify.com/embed/playlist/37i9dQZF1DX3KVUsNUmJc2?si=c463cf981865491e?theme=0"
+            frameborder="0" width="100%" loading="lazy" data-testid="featured-media" draggable="false"
+            class="sc-ecf2deb9-0 emCxHN sc-ecf2deb9-1 juBOEX sc-26e0dd2-0 eJReQo" data-gtm-yt-inspected-80="true"
+            data-gtm-yt-inspected-50516318_18="true" data-gtm-yt-inspected-50516318_20="true"></iframe>
+        </div>
+        <div class="content-right music-info">
+          <h5 class="hero glitch layers" data-text="Sounds of Arcane" style="font-size: 65px;">
+            <span>
+              Sounds of Arcane
+            </span>
+            </span>
+          </h5>
+          <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut
+            labore et
+            dolore magna aliqua.</p>
+          <div class="app-list">
+            <ul>
+              <li><a href="https://open.spotify.com/playlist/37i9dQZF1DX3KVUsNUmJc2?si=c463cf981865491e"
+                  target="_blank">
+                  <img src="https://img.icons8.com/?size=100&id=6707&format=png&color=ffffff"
+                    style="width: 40px; height: 40px;">
+                </a></li>
+              <li><a href="https://music.apple.com/us/playlist/arcane-soundtrack/pl.u-RRbVJZjT4Z" target="_blank">
+                  <img src="https://img.icons8.com/?size=100&id=EHtxO8ZmA602&format=png&color=ffffff" alt="apple music"
+                    style="width:40px; height:40px;">
+                </a></li>
+              <li><a href="https://music.amazon.com/playlists/B09JZ3ZQZC" target="_blank">
+                  <img src="https://img.icons8.com/?size=100&id=32469&format=png&color=ffffff" alt="Deezer"
+                    style="width: 40px; height: 40px;" />
+                </a></li>
+                <li><a href="https://music.amazon.com/playlists/B09JZ3ZQZC" target="_blank">
+                  <img src="https://img.icons8.com/?size=100&id=yDlSgeIQY5lz&format=png&color=ffffff" alt="Amazon"
+                    style="width: 40px; height: 40px;" />
+                </a></li> 
+                <li><a href="https://music.amazon.com/playlists/B09JZ3ZQZC" target="_blank">
+                  <img src="https://img.icons8.com/?size=100&id=37325&format=png&color=ffffff" alt="Youtube"
+                    style="width: 40px; height: 40px;" />
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
   </main>
   </div>
 </body>
