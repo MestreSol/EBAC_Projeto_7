@@ -245,3 +245,20 @@
   padding: 200px 0;
   text-align: center;
 }
+
+@media (@pc-scale) {
+  .hero-container {
+    padding: 100px 0;
+  }
+
+  .hero {
+    font-size: clamp(40px, 10vw, 100px);
+  }
+
+  .layers::before,
+  .layers::after {
+    font-size: clamp(40px, 10vw, 100px);
+  }
+
+  
+}
